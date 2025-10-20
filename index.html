@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de senhas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/favicon1.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <video autoplay loop muted src="./assets/cherry-grove-minecraft.mp4"></video>
+    <div class="container">
+        <h1>Gerador de Senhas</h1>
+        <label for="tamanhoSenha">Comprimento da senha: <span id="saidaTamanhoSenha">12</span></label>
+        <input type="range" id="tamanhoSenha" min="4" max="64" value="12">
+
+        <div class="containerOpcoes">
+            <label><input class="opcoes" type="checkbox" id="maiusculo"> Incluir letras maiúsculas</label>
+            <label><input class="opcoes" type="checkbox" id="minusculo"> Incluir letras minúsculas</label>
+            <label><input class="opcoes" type="checkbox" id="numero"> Incluir números</label>
+            <label><input class="opcoes" type="checkbox" id="simbolo"> Incluir símbolos</label>
+            <label><input class="opcoes" type="checkbox" id="emoji"> Incluir emoji</label>
+        </div>
+
+        <button id="gerarBtn">Gerar Senha</button>
+
+        <div class="resultado">
+            <h2>Senha Gerada: <span id="forcaSenha"></span></h2>
+            <p id="senhaGerada"></p>
+        </div>
+            <button id="copiarBtn">Copiar para a área de transferência</button>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>

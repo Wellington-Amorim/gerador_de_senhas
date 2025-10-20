@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: pixelify sans, 'Noto Color Emoji', 'Segoe UI Emoji', sans-serif;
+}
+
+@media (max-width: 600px) {
+    #copiarBtn, #gerarBtn {
+        margin: 20px 0;
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    h1, h2 {
+        font-size: clamp(1rem, 4vw, 1.3rem);
+    }
+
+    .container {
+        width: 95%;
+        max-width: 100%;
+        padding: 1rem;
+    }
+}
+
+:root {
+    --rosa1: #dd2b81dd;
+}
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.9);
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+html, body {
+    overflow-y: auto;
+}
+
+#tamanhoSenha {
+    width: 100%;
+    accent-color: var(--rosa1);
+    margin: 1rem 0;
+    cursor: pointer;
+}
+#tamanhoSenha::-webkit-slider-thumb {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    cursor: pointer;
+    margin-top: -5px;
+}
+#tamanhoSenha::-webkit-slider-runnable-track {
+    height: 6px;
+    border-radius: 3px;
+    background: linear-gradient(90deg, transparent, var(--rosa1));
+}
+
+
+.container {
+    padding: clamp(1rem, 3vw, 2rem);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 360px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.45);
+    /* backdrop-filter: blur(10px); */
+}
+h1, h2 {
+    margin-bottom: 5px;
+    color: #333;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    font-weight: bold;
+}
+
+.containerOpcoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-top: 15px;
+    text-align: left;
+
+}
+.opcoes {
+    padding: 5px;
+    margin-bottom: 10px;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.30);
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: all 0.25s ease;
+    vertical-align: middle;
+    margin-right: 8px;
+    position: relative;
+}
+.opcoes:checked {
+    background-color: rgba(196, 7, 117, 0.385);
+    border-color: var(--rosa1);
+    box-shadow: 0 0 8px var(--rosa1);
+}
+
+
+#senhaGerada {
+    word-break: break-word; 
+    max-width: 100%;
+}
+
+#forcaSenha {
+    font-size: medium;
+}
+
+#copiarBtn, #gerarBtn {
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border: #ffffff solid 1px;
+    margin: clamp(1rem, 4vh, 3rem) 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#copiarBtn:hover, #gerarBtn:hover {
+    box-shadow: #ffffff 0px 0px 10px;
+}
+#copiarBtn:active, #gerarBtn:active {
+    background-color: #33333330;
+}
