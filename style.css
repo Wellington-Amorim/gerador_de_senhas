@@ -140,6 +140,7 @@ h1, h2 {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+    color: black;
 }
 #copiarBtn:hover, #gerarBtn:hover {
     box-shadow: #ffffff 0px 0px 10px;
