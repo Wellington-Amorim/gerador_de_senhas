@@ -17,3 +17,8 @@ https://github.com/Wellington-Amorim/gerador_de_senhas.git
 5. Espere alguns segundos para concluir a instalação
 6. Abra a pasta e encontre o arquivo index.html
 7. Abra o arquivo index.html no seu navegador e pronto
+
+## Visualização rápida
+Acesse o link para visualizar o gerador de senhas no seu navegador: 
+<a href="https://geradorwas.onrender.com" target="_blank">Gerador de Senhas</a>  
+**Observação:** talvez a página esteja fora do ar ou não funcione corretamente. Nesse caso, recomendo a instalação.  
