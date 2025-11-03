@@ -1,6 +1,6 @@
 # Gerador de senhas
 
-<img width="500" alt="image" src="https://github.com/user-attachments/assets/299aa077-1d29-4187-9881-fc698910b6f7" />
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/299aa077-1d29-4187-9881-fc698910b6f7" />
 
 * Gera senhas aleatórias, podendo escolher o nível de força da senha
 * Feito em HTML, CSS e JS
