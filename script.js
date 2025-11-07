@@ -1,3 +1,4 @@
+const video = document.getElementById('video');
 const tamanhoSenha = document.getElementById('tamanhoSenha');
 const saidaTamanhoSenha = document.getElementById('saidaTamanhoSenha');
 const maiusculo = document.getElementById('maiusculo');
@@ -9,6 +10,10 @@ const senhaGerada = document.getElementById('senhaGerada')
 const copiarBtn = document.getElementById('copiarBtn');
 const forcaSenha = document.getElementById('forcaSenha');
 
+document.addEventListener('click', () => {
+  document.addEventListener('touchstart', () => video.play(), { once: true });
+  document.addEventListener('click', () => video.play(), { once: true });
+}, { once: true }); 
 
 tamanhoSenha.addEventListener('input', () => {
     saidaTamanhoSenha.textContent = tamanhoSenha.value
